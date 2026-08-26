@@ -1,0 +1,129 @@
+/*Indice de estilos
+
+0. Generales / Colores 
+1. Tipografías
+2. Header / Cabecera
+3. Enlaces y botones
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-principal: #52a9ff;
+    --color-texto: #1b1b1b;
+    --color-acento: #a3d1ff;
+}
+
+/*1. Tipografías*/
+
+.titulo-principal{
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    color: var(--color-principal);
+    font-size: 28px;
+}
+
+.titulo-secundario{
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    color: var(--color-principal);
+    font-size: 22px;
+}
+
+.parrafo{
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    color: var(--color-texto);
+    font-size: 14px;
+}
+
+.texto-oculto{
+    display: none;
+}
+
+/*2. Header */
+
+#cabecera-principal{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* borde:  grosor tipo color*/
+    border-bottom: 3px solid var(--color-principal);
+}
+
+/* 3. Enlaces y botones */
+
+.boton-principal{
+    /*fuente*/
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    color: var(--color-principal);
+    font-size: 18px;
+    /*quito la linea inferior*/
+    text-decoration: none;
+    /*asigno cuerpo por medio del relleno*/
+    padding: 8px 15px;
+    /*animo el paso del mouse*/
+    transition: all linear 0.3s;
+    /*rodondear los bordes*/
+    border-radius: 3px;
+}
+
+.boton-principal:hover{
+    color: rgb(255, 255, 255);
+    background-color: var(--color-principal);
+}
+
+#area-destacada div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.element-row{
+    display: flex;
+}
+
+
+@media only screen and (max-width: 600px){
+    /*header*/
+    #cabecera-principal{
+        flex-direction: column;
+    }
+    /*botones*/
+    nav[role-navigation]{
+        width: 100%;
+    }
+    .boton-principal{
+        /*bloque*/
+        display: block;
+        width: 96%;
+        margin: 5px 2% 0 2%;
+        text-align: center;
+        border-bottom: 1px solid var(--color-principal);
+        border-radius: 0;
+    }
+}    
+
+
