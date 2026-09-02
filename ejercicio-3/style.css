@@ -18,6 +18,15 @@
     --color-acento: #a3d1ff;
 }
 
+.element-row{
+    display: flex;
+    justify-content: space-around;
+}
+
+img{
+    width: 100%;
+}
+
 /*1. Tipografías*/
 
 .titulo-principal{
@@ -29,6 +38,8 @@
     "wdth" 100;
     color: var(--color-principal);
     font-size: 28px;
+    display: flex;
+    justify-content: center;
 }
 
 .titulo-secundario{
@@ -95,19 +106,80 @@
     background-color: var(--color-principal);
 }
 
+#area-destacada{
+    padding: 50px;
+}
+
 #area-destacada div{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.element-row{
-    display: flex;
+.articulo-index{
+    padding: 20px;
+    
+}
+
+.articulo-index *{
+    margin: 0 0 10px 0;
 }
 
 
+.boton-ver-mas{
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    color: var(--color-principal);
+    font-size: 18px;
+    /*quito la linea inferior*/
+    text-decoration: none;
+    /*asigno cuerpo por medio del relleno*/
+    padding: 6px 15px;
+    /*animo el paso del mouse*/
+    transition: all linear 0.3s;
+    /*rodondear los bordes*/
+    border-radius: 3px;
+    
+}
+
+.boton-ver-mas:hover{
+    color: rgb(255, 255, 255);
+    background-color: var(--color-principal);
+}
+
+.titulo-experiencia{
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    color: #144158;
+    display: flex;
+    justify-content: center;
+}
+
+#area-experiencias{
+    padding: 100px;
+    background: url(assets/fonod-buenos-aires.jpeg) center center no-repeat; 
+    background-size: cover;
+
+}
+
+#area-experiencias video{
+    margin: 30px 5%;
+}
+
 @media only screen and (max-width: 600px){
     /*header*/
+    .element-row{
+        flex-direction: column;
+        align-items: center;
+    }
     #cabecera-principal{
         flex-direction: column;
     }
