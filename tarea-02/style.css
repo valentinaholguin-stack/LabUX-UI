@@ -1,0 +1,691 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-principal: #ec635e;
+    --color-principal-complementario: #f6b0ac;
+    --color-principal-complementario-2: #fce3de;
+    --color-acento: #7dafdf;
+    --color-texto: #1b1b1b;
+    --color-texto-1: #ffffff;
+}
+
+/* imagen*/
+img{
+    width: 100%;
+}
+
+/* Tipografías*/
+.texto-oculto{
+    display: none;
+}
+
+.titulo-principal {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.titulo-secundario {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-size: 22px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    text-decoration: underline;
+}
+
+.parrafo{
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+/*Cabecera*/
+#cabecera-principal {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: #ec635e;
+}
+
+/*Menú*/
+.boton-principal{
+    /*fuente*/
+    font-family: "Bricolage Grotesque", sans-serif;
+    color: var(--color-texto-1);
+    font-size: 15px;
+    /*quito la linea inferior*/
+    text-decoration: none;
+    /*asigno cuerpo por medio del relleno*/
+    padding: 8px 15px;
+    /*animo el paso del mouse*/
+    transition: all linear 0.2s;
+    /*rodondear los bordes*/
+    border-radius: 3px;
+}
+
+.boton-principal:hover{
+    color: rgb(255, 255, 255);
+    background-color: var(--color-principal-complementario);
+}
+
+.boton-viaje {
+    background-color: var(--color-principal-complementario-2);
+    color: var(--color-principal);
+    padding: 10px 15px;
+    text-decoration: none;
+    font-family: "Bricolage Grotesque", sans-serif;
+     transition: all linear 0.2s;
+    /*rodondear los bordes*/
+    border-radius: 3px;
+}
+
+.boton-viaje:hover{
+    color: var(--color-principal-complementario-2);
+    background-color: #7dafdf;
+}
+
+/* Logo */
+#cabecera-principal img {
+    width: 270px;
+    height: auto;
+}
+
+#cabecera-principal nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.iconos-redes {
+    width: 140px;
+    height: auto;
+    margin-left: auto;
+}
+
+/* Banner */
+.banner {
+    position: relative;
+    width: 100%;
+}
+
+.banner img {
+    width: 100%;
+    display: block;
+}
+
+.texto-banner {
+    position: absolute;
+    top: 60px;
+    right: 50px;
+    text-align: center;
+    font-family: "Bricolage Grotesque", sans-serif;
+}
+
+.texto-banner h1 {
+    color: #f06464;
+    font-size: 50px;
+    margin: 0;
+}
+
+.texto-banner p {
+    color: #f06464;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.boton-banner {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 18px;
+    background-color: var(--color-principal);
+    color: white;
+    text-decoration: none;
+    font-family: "Bricolage Grotesque", sans-serif;
+    border-radius: 5px;
+    transition: all linear 0.2s;
+}
+    
+.boton-banner:hover {
+    background-color:#7dafdf
+}
+
+/* Una ciudad, dos continentes */
+
+.ciudad-continentes {
+    width: 100%;
+    margin: 70px 0;
+    display: flex;
+    align-items: flex-start;
+    gap: 70px;
+    padding: 50px 80px;
+    background-color: var(--color-principal-complementario-2);
+}
+
+.texto-ciudad {
+    width: 50%;
+    font-family: "Bricolage Grotesque", sans-serif;
+}
+
+.texto-ciudad h2 {
+    font-size: 28px;
+    color: var(--color-principal);
+    margin-bottom: 20px;
+    white-space: nowrap;
+}
+
+.texto-ciudad p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.imagen-ciudad {
+    width: 50%;
+}
+
+.imagen-ciudad img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.datos-estambul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.dato-estambul {
+    width: calc(50% - 13px);
+    text-align: center;
+    font-family: "Bricolage Grotesque", sans-serif;
+    text-align: justify;
+}
+
+.dato-estambul span {
+    font-size: 32px;
+}
+
+.dato-estambul h3 {
+    font-size: 17px;
+    color: var(--color-principal);
+    margin-top: 8px;
+    margin-bottom: 5px;
+}
+
+.dato-estambul p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.boton-ciudad {
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    padding: 10px 18px;
+    background-color: var(--color-principal);
+    color: white;
+    text-decoration: none;
+    font-family: "Bricolage Grotesque", sans-serif;
+    border: 2px solid var(--color-principal);
+    border-radius: 5px;
+    transition: all linear 0.2s;
+}
+
+.boton-ciudad:hover {
+    background-color: transparent;
+    color: var(--color-principal);
+}
+/* articulos */
+.contenedor-articulos {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.articulo-index {
+    width: 320px;
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    overflow: hidden;
+    background-color: white;
+    font-family: "Bricolage Grotesque", sans-serif;
+}
+
+.articulo-index img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    display: block;
+}
+
+.articulo-index h3 {
+    margin: 12px;
+    font-size: 22px;
+    text-align: center;
+}
+
+.articulo-index p {
+    font-size: 16px;
+    margin: 0 12px 12px;
+}
+
+
+.articulo-index a {
+    display: block;
+    margin: 0 12px 15px;
+    color: #f06464;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.articulo-index .boton-ver-mas {
+    display: inline-block;
+    width: auto;
+    font-family: "Bricolage Grotesque", sans-serif;
+    color: var(--color-principal);
+    font-size: 18px;
+    text-decoration: none;
+    padding: 4px 10px;
+    transition: all linear 0.2s;
+    border-radius: 3px;
+}
+
+.articulo-index .boton-ver-mas:hover {
+    color: white;
+    background-color: var(--color-acento);
+}
+
+/* Video */
+
+.seccion-video {
+    width: 100%;
+    margin-top: 70px;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-principal-complementario-2);
+}
+
+.seccion-video video {
+    width: 80%;
+    max-width: 1200px;
+    height: auto;
+    border-radius: 15px;
+}
+
+/* Destacados imperdibles */
+
+.contenedor-articulos-imperdibles {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.articulo-imperdibles {
+    width: 400px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: white;
+    font-family: "Bricolage Grotesque", sans-serif;
+}
+
+.articulo-imperdibles img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    display: block;
+}
+
+.articulo-imperdibles h3 {
+    margin: 12px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.articulo-imperdibles p {
+    font-size: 16px;
+    margin: 0 12px 12px;
+}
+
+.articulo-imperdibles .boton-ver-mas {
+    display: inline-block;
+    width: auto;
+    margin: 0 12px 15px;
+    font-family: "Bricolage Grotesque", sans-serif;
+    color: var(--color-principal);
+    font-size: 18px;
+    text-decoration: none;
+    padding: 4px 10px;
+    transition: all linear 0.2s;
+    border-radius: 3px;
+}
+
+.articulo-imperdibles .boton-ver-mas:hover {
+    color: white;
+    background-color: var(--color-acento);
+}
+
+/* Mapa */
+
+#titulo-mapa {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-size: 22px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-decoration: underline;
+}
+
+.map-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.map-container iframe {
+    width: 100%;
+    border-radius: 15px;
+}
+
+/* cierre */
+.cierre {
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+.cierre h2 {
+    color: var(--color-principal);
+    margin-bottom: 10px;
+}
+
+.cierre p {
+    margin-bottom: 20px;
+}
+
+.boton-viaje {
+    display: inline-block;
+    padding: 10px 18px;
+    background-color: var(--color-principal);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+footer {
+    font-family: "Bricolage Grotesque", sans-serif;
+    text-align: center;
+    padding: 20px;
+    background-color: var(--color-principal);
+    color: white;
+}
+
+/*  */
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 600px){
+
+    /* HEADER */
+
+    #cabecera-principal{
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 10px;
+    }
+
+    #cabecera-principal img.logo{
+        width: 180px;
+    }
+
+    /* MENU */
+
+    #cabecera-principal nav{
+        position: static;
+        transform: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 5px;
+        margin-top: 15px;
+    }
+
+    .boton-principal{
+        display: block;
+        width: 96%;
+        margin: 5px 2% 0 2%;
+        text-align: center;
+        border-bottom: 1px solid var(--color-principal);
+        border-radius: 0;
+    }
+
+    .boton-viaje{
+        display: block;
+        width: 96%;
+        margin: 5px 2% 0 2%;
+        text-align: center;
+    }
+
+    /* ICONOS REDES */
+
+    #cabecera-principal .iconos-redes{
+        width: 110px;
+        margin: 10px 0 0 0;
+    }
+
+    /* BANNER */
+
+    .banner img{
+        width: 100%;
+    }
+
+    .texto-banner{
+        position: static;
+        padding: 20px 15px;
+        text-align: center;
+    }
+
+    .texto-banner h1{
+        font-size: 30px;
+    }
+
+    .texto-banner p{
+        font-size: 16px;
+    }
+
+    .boton-banner{
+        margin-top: 10px;
+    }
+
+    /* TITULOS */
+
+    .titulo-principal{
+        font-size: 25px;
+    }
+
+    .titulo-secundario{
+        font-size: 20px;
+        margin: 30px 15px 35px 15px;
+    }
+
+    /* ARTICULOS PRINCIPALES */
+
+    .contenedor-articulos{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .articulo-index{
+        width: 90%;
+    }
+
+    .articulo-index img{
+        height: 180px;
+    }
+
+    .articulo-index h3{
+        font-size: 20px;
+    }
+
+    .articulo-index p{
+        font-size: 16px;
+    }
+
+    /* UNA CIUDAD, DOS CONTINENTES */
+
+    .ciudad-continentes{
+        width: 100%;
+        margin: 40px 0;
+        padding: 30px 20px;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .texto-ciudad{
+        width: 100%;
+    }
+
+    .texto-ciudad h2{
+        font-size: 25px;
+        white-space: normal;
+        text-align: center;
+    }
+
+    .texto-ciudad p{
+        font-size: 16px;
+        text-align: justify;
+    }
+
+    .boton-ciudad{
+        margin-bottom: 20px;
+    }
+
+    /* DATOS DE ESTAMBUL */
+
+    .datos-estambul{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px 10px;
+        margin-top: 20px;
+    }
+
+    .dato-estambul{
+        width: calc(50% - 5px);
+        text-align: center;
+    }
+
+    .dato-estambul span{
+        font-size: 28px;
+    }
+
+    .dato-estambul h3{
+        font-size: 16px;
+    }
+
+    .dato-estambul p{
+        font-size: 14px;
+        text-align: center;
+    }
+
+    /* IMAGEN DE ESTAMBUL */
+
+    .imagen-ciudad{
+        width: 100%;
+    }
+
+    .imagen-ciudad img{
+        height: 220px;
+    }
+
+    /* VIDEO */
+
+    .seccion-video{
+        margin-top: 40px;
+        padding: 30px 0;
+    }
+
+    .seccion-video video{
+        width: 90%;
+    }
+
+    /* IMPERDIBLES */
+
+    .contenedor-articulos-imperdibles{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .articulo-imperdibles{
+        width: 90%;
+    }
+
+    .articulo-imperdibles img{
+        height: 190px;
+    }
+
+    .articulo-imperdibles h3{
+        font-size: 20px;
+    }
+
+    .articulo-imperdibles p{
+        font-size: 16px;
+    }
+
+    /* MAPA */
+
+    #titulo-mapa{
+        font-size: 20px;
+        margin: 40px 15px 25px 15px;
+    }
+
+    .map-container{
+        width: 90%;
+    }
+
+    .map-container iframe{
+        height: 350px;
+    }
+
+    /* CIERRE */
+
+    .cierre{
+        margin-top: 50px;
+        margin-bottom: 40px;
+        padding: 0 15px;
+    }
+
+    .cierre h2{
+        font-size: 20px;
+    }
+
+    .cierre p{
+        font-size: 16px;
+    }
+
+    /* FOOTER */
+
+    footer{
+        padding: 15px;
+        font-size: 14px;
+    }
+
+}
